@@ -12,7 +12,10 @@
     <section class="header-block">
       <section class="logo-menu">
         <div class="logo">
-          <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg">
+          <img class="logoo" src="svg/noemi-logo.svg">
+        </div>
+        <div class="menu">
+          <div class="line_menu"></div>
         </div>
         <ul class="menu-link">
           <li class="item">
@@ -53,8 +56,8 @@
               <a href="#0" class="tag-link">INTERIOR</a>
             </li>
           </ul>
-          <a href="#0" class="text_card">Сейчас в тренде: сад<br> 
-              на подоконнике</a>
+          <h3><a href="#0" class="text_card">Сейчас в тренде: сад<br>
+              на подоконнике</a></h3>
         </div>
       </div>
       <div class="card trend_two">
@@ -103,7 +106,7 @@
     <main class="articles">
       <article class="article">
         <figure class="image">
-          <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="пост1" class="img">
+          <img src="../mq-diplom/images/last-post1.jpg" alt="пост1" class="img">
         </figure>
         <div class="info">
           <ul class="tags">
@@ -222,7 +225,7 @@
             <time class="data">10 июня 2019</time>
             <span class="author">Неизвестный автор</span>
           </div>
-          <div class="description">
+          <div class="description text_end">
             <p class="text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
           </div>
         </div>
@@ -279,7 +282,7 @@
             </div>
           </article>
         </section>
-        <form action="" class="search">
+        <form class="search">
           <label>
             <input type="search" id="search" placeholder="Найти..." class="windows_search">
             <span class="visually-hidden">введите ваш запрос</span>
@@ -345,6 +348,137 @@
         </ul>
       </section>
     </aside>
+    <section class="trends trends_product">
+      <h2 class="text_trands">наши изделия</h2>
+      <section class="products">
+        <div class="product">
+          <h2 class="heading">Подушки на диван</h2>
+          <h3 class="info_card_price">Набор из двух подушек с модными принтами. Видео о создании <a href="#0" class="link_card_price">здесь</a>.</h3>
+          <div class="info_price">
+            <div class="sale_price">
+              <div class="price">1000 &#8381</div>
+              <div class="sale">800 &#8381</div>
+            </div>
+            <button type="button" class="button_card_price">в магазин</button>
+          </div>
+          <picture class="image_shop_one">
+            <source
+              media="(min-width: 1200px)"
+              srcset="images/shop-item-desk1.jpg">
+            <source
+              media="(min-width: 641px)"
+              srcset="images/shop-item-tablet1.jpg">
+            <source
+              media="(max-width: 640px)"
+              srcset="images/shop-item-mobile1.jpg">
+            <img src="last-post5">
+          </picture>
+        </div>
+        <div class="product">
+          <h2 class="heading">Кукла «Зайчик»</h2>
+          <h3 class="info_card_price">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#0" class="link_card_price">весенняя серия постов</a> в блоге и несколько подкастов.</h3>
+          <div class="info_price">
+            <div class="sale_price">
+              <div class="sale">3500 &#8381</div>
+            </div>
+            <button type="button" class="button_card_price">в магазин</button>
+          </div>
+          <picture class="image_shop_one">
+            <source
+              media="(min-width: 1200px)"
+              srcset="images/shop-item-desk2.jpg">
+            <source
+              media="(min-width: 641px)"
+              srcset="images/shop-item-tablet2.jpg">
+            <source
+              media="(max-width: 640px)"
+              srcset="images/shop-item-mobile2.jpg">
+            <img src="last-post5">
+          </picture>
+        </div>
+        <div class="product">
+          <h2 class="heading">Шестиугольная рамка</h2>
+          <h3 class="info_card_price">Необычная рамка для украшения дома из видео <a href="#0" class="link_card_price">«Как сделать рамку из подручных средств за 30 минут»</a></h3>
+          <div class="info_price">
+            <div class="sale_price">
+              <div class="price">500 &#8381</div>
+              <div class="sale">400 &#8381</div>
+            </div>
+            <button type="button" class="button_card_price">в магазин</button>
+          </div>
+          <picture class="image_shop_one">
+            <source
+              media="(min-width: 1200px)"
+              srcset="images/shop-item-desk3.jpg">
+            <source
+              media="(min-width: 641px)"
+              srcset="images/shop-item-tablet3.jpg">
+            <source
+              media="(max-width: 640px)"
+              srcset="images/shop-item-mobile3.jpg">
+            <img src="last-post5">
+          </picture>
+        </div>
+      </section>
+     <section> 
   </div>
+  <footer class="footer">
+    <section class="socials_copyright">
+      <div class="container">
+        <div class="articles-socials">
+          <ul class="socials">
+            <li class="socials-item">
+              <a href="#0" class="socials-link socials-link-dribbble">
+                <span class="visually-hidden">dribbble</span>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="#0" class="socials-link socials-link-pinterest">
+                <span class="visually-hidden">pinterest</span>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="#0" class="socials-link socials-link-tumblr">
+                <span class="visually-hidden">tumblr</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <a href="#0" class="info_copyright">Copyright © 2009–2019 City Blog LLC.</a>
+      </div>
+    </section>
+  </footer>
+  <section class="popup">
+    <div class="feedback">
+      <div class="text__title__popup">Ваш фидбек</div>
+      <form class="form">
+        <div class="popup_block">
+          <p>Как часто вы заходите на сайт?</p>
+          <select name="select" id="" class="select">
+            <option>Почти каждый день</option>
+            <option>Раз в два дня</option>
+            <option>Раз в три дня</option>
+            <option>Раз в неделю</option>
+            <div class="pin"></div>
+          </select>
+        </div>
+        <div class="popup_block">
+          <p>Вы подписаны на e-mail рассылку?</p>
+          <input type="radio" class="radio radio_yes" id="radio">
+          <label for="one">Да</label>
+          <input type="radio" class="radio radio_no" id="radio">
+          <label for="two">Нет</label>
+        </div>
+        <div>
+          <p>Расскажите, какой контент вы хотели бы видеть
+            на нашем сайте?</p>
+            <textarea class="popup_text" name="" id="">sdf f r dg dg dsgbdgsbfs e</textarea>
+            <button type="submit" class="button">ОТправить</button>
+        </div>
+      </form>  
+    </div>
+  </section>
 </body>
 </html>
