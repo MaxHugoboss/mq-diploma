@@ -1,16 +1,4 @@
-@font-face {
-    font-family: "open sans";
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
-    font-weight: bold;
-    font-style: normal;
-  }
-  
-@font-face {
-    font-family: "open sans";
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
-    font-weight: 400;
-    font-style: normal;
-}
+
   
 a {
     text-decoration: none;
@@ -75,6 +63,8 @@ body {
   
 .logo-menu {
     height: 41px;
+
+    padding-left: 4px;
     
     display: flex;
     flex-direction: row;
@@ -82,7 +72,7 @@ body {
 }
   
 .logo {
-    width: 182px;
+    width: 180px;
     height: 41px;
 }
   
@@ -101,7 +91,7 @@ body {
 
   width: 23px;
   height: 7px;
-  margin-right: 35px;
+  margin-right: 5px;
   margin-top: 18px;
   border-top: 3px solid white;
   box-sizing: border-box;
@@ -131,22 +121,6 @@ body {
   top: -11px;
 }
 
-.logo {
-  width: 155px;
-}
-
-.logo-menu {
-  padding-left: 33px;
-}
-
-.text-title-header {
-  width: 650px;
-
-  font-size: 40px;
-  line-height: 53px;
-  padding-top: 85px;
-}
-  
 .item {
     list-style-type: none;
 }
@@ -175,7 +149,7 @@ body {
 }
   
 .text-title-header {
-    font-family: "open sans", arial, sans-serif;
+    font-family: open sans;
     font-weight: bold;
     font-size: 45px;
     color: white;
@@ -362,6 +336,7 @@ body {
   
   .img {
     width: 100%;
+    height: 100%;
 
     margin-top: auto;
     margin-bottom: auto;
@@ -448,7 +423,7 @@ body {
   }
   
   .author {
-    width: 272px;
+    width: 100%;
     
     font-family: "open sans", arial, sans-serif;
     font-weight: bold;
@@ -1020,10 +995,9 @@ body {
 .popup {
   position: absolute;
 
-  background-color: rgba(0, 0, 0, 0.8);
-
   display: none;
-  flex-direction: column;
+
+  background-color: rgba(0, 0, 0, 0.8);
 
   width: 100%;
   height: 100%;
@@ -1032,27 +1006,37 @@ body {
   left: 0;
 }
 
+.form-x {
+  position: relative;
+  width: 18px;
+  top: -4%;
+  left: 104.6%;
+}
+
 .feedback {
   position: absolute;
 
   background-color: white;
 
   width: 390px;
-  height: 590px;
+  height: 592px;
 
   padding: 0 30px;
 
   box-sizing: border-box;
 
   top: 240px;
-  left: 38.4%;
+  left: calc((100%/2) - 195px);
 
   z-index: 2;
   opacity: 1;
+
+  font-family: open sans, arial, sans-serif;
+  font-size: 13px;
 }
 
 .text__title__popup {
-  margin-top: 47px;
+  margin-top: 28px;
   margin-left: auto;
   margin-right: auto;
   font-family: "open sans", arial, sans-serif;
@@ -1080,19 +1064,39 @@ body {
 }
 
 .popup_block {
-  background: blanchedalmond; 
+  margin-top: 25px;
+
+  font-family: open sans, arial, sans-serif;
+  font-size: 13px;
+}
+
+.popup_block:nth-child(2) {
+  margin-top: 32px;
+}
+
+.popup_block:nth-child(3) {
+  margin-top: 28px;
 }
 
 .select {
-  background-color: red;
   width: 100%;
-  height: 50px;
+  height: 47px;
   background-image: url(../svg/form-arrows.svg);
   background-repeat: no-repeat;
-  background-size: 20px;
+  background-size: 10px;
   background-position: 96%;
   appearance: none;
-  padding: 0 22px;
+  padding: 0 20px;
+  margin-top: 7px;
+  color: #939594;
+  background-color: #f4f7f6;
+  border: none;
+} 
+
+.radio_block {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
 }
 
 .radio {
@@ -1101,8 +1105,13 @@ body {
   height: 20px;
   background-image: url(../svg/form-empty-circle.svg);
   background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: 96%;
+  background-size: 17px;
+  background-position: center center;
+  margin: 3px 0 0 0;
+}
+
+.radio_no {
+  margin-left: 19px;
 }
 
 .radio_yes:focus {
@@ -1115,15 +1124,36 @@ body {
 }
 
 .popup_text {
-  width: 330px;
-  min-height: 200px;
+  width: 100%;
+  height: 127px;
+
+  color: #939594;
   background-color: #f4f7f6;
+
+  font-family: open sans, arial, sans-serif;
+  font-size: 13px;
+
+  margin-top: 7px;
+  padding: 16px 23px 0 23px;
+
   border: none;
+  box-sizing: border-box;
 }
 
 .button {
-  width: 330px;
+  width: 100%;
   height: 48px;
+
+  font-family: open sans, arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+
+  background-color: #b59f5b;
+  color: white;
+
+  border: none;
+  margin-top: 25px;
+
   text-transform: uppercase;
 }
 
@@ -1140,9 +1170,13 @@ body {
   .header-block  {
     width: 100%;
     height: 390px;
-    padding: 43px 0 0 3px;
+    padding: 43px 30px 0 30px;
   }
   
+  .logo {
+    width: 158px;
+  }
+
   .menu-link {
     display: none;
   }
@@ -1320,6 +1354,36 @@ body {
   .image_shop_one {
     top: -200px;
   }
+
+  .feedback {
+    top: 235px;
+    left: calc((100%/2) - 195px);
+  }
+
+  .text__title__popup {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+
+  .radio {
+    width: 28px;
+    height: 28px;
+    background-size: 25px;
+  }
+
+  .radio_no {
+    margin-left: 32px;
+  }
+
+  label {
+    margin-left: 5px;
+  }
+
+  .form-x {
+    width: 28px;
+    top: -6%;
+    left: 99.6%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1336,15 +1400,13 @@ body {
   }
 
   .main {
-    width: 100%;
+    width: 360px  ;
     padding-top: 40px;
     flex-direction: column;
   }
 
   .articles {
-    width: 330px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 
   .article {
@@ -1357,10 +1419,19 @@ body {
     margin-top: 58px;
   }
 
+  .article__sidebar {
+    justify-content: flex-start;
+  }
+
   .info {
     width: 100%;
     min-height: 100px;
     margin-top: 15px;
+  }
+
+  .info__article__sidebar {
+    width: 240px;
+    margin-left: 20px;
   }
 
   .trend {
@@ -1389,8 +1460,6 @@ body {
   }
 
   .logo {
-    position: absolute;
-
     margin-top: 195px;
     margin-left: auto;
     margin-right: auto;
@@ -1398,8 +1467,15 @@ body {
   }
 
   .menu {
+    position: absolute;
+    left: 89%;
+
     display: block;
-    margin-left: auto;
+  }
+
+  .logo-menu {
+    display: flex;
+    flex-direction: row;
   }
 
   .line_menu {
@@ -1435,7 +1511,7 @@ body {
 
   .image {
     background: #eff6f1;
-    width: 330px;
+    width: 100%;
     height: 255px;
   }
 
@@ -1448,21 +1524,25 @@ body {
     padding-top: 8px;
     font-size: 16px;
     min-height: 20px;
-    width: 320px;
+    width: 100%;
   }
 
   .data_author {
     padding-top: 18px;
     min-height: 20px;
-    width: 330px;
+    width: 100%;
+  }
+
+  .author {
+    margin-left: 9px;
   }
 
   .data {
-    width: 100px;
+    width: 112px;
   }
 
   .description {
-    width: 321px;
+    width: 100%;
     min-height: 70px;
     padding-top: 14px;
   }
@@ -1476,7 +1556,7 @@ body {
   }
 
   .sidebar {
-    width: 330px;
+    width: 100%;
 
     margin-left: auto;
     margin-right: auto;
@@ -1491,14 +1571,6 @@ body {
     margin-top: 28px;
   }
 
-  .info__article__sidebar {
-    width: 240px;
-  }
-
-  label {
-    width: 100%;
-  }
-
   .windows_search {
     width: 100%;
     padding-left: 17px;
@@ -1510,7 +1582,7 @@ body {
   }
 
   .aside-item {
-    width: 330px;
+    width: 100%;
     margin-bottom: 42px;
   }
 
@@ -1523,7 +1595,7 @@ body {
   }
 
   .email {
-    width: 330px;
+    width: 100%;
   }
 
   .tag_sidebar {
@@ -1547,7 +1619,7 @@ body {
   }
 
   .trends {
-    width: 330px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1586,4 +1658,76 @@ body {
   .copyright {
     margin-top: 42px;
   }
-}  
+
+  .feedback {
+    width: 330px;
+    height: 546px;
+
+    padding: 0 23px;
+
+    top: 55px;
+    left: calc(50% - 165px);
+  }
+
+  .text__title__popup {
+    font-size: 16px;
+    margin-top: -6px; 
+  }
+
+  .select {
+    background-position: 94%;
+  }
+
+  .radio {
+    width: 28px;
+    height: 28px;
+    background-size: 25px;
+  }
+
+  label {
+    margin-left: 5px;
+  }
+
+  .radio_no {
+    margin-left: 30px;
+  }
+
+  .popup_block:nth-child(3) {
+    margin-top: 26px;
+  }
+
+  .form-x {
+    width: 28px;
+    top: -6%;
+    left: 97.6%;
+  }
+} 
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .trend {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: calc((100%/2) - 2.5px);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .trend {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    height: 100%;
+    width: calc((100%/4) - 3px);
+  }
+
+  .text_card {
+    font-size: 14px;
+  }
+
+  
+}

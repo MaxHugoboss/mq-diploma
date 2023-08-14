@@ -451,7 +451,9 @@
     </section>
   </footer>
   <section class="popup">
+    
     <div class="feedback">
+      <img src="svg/form-x.svg" alt="X" class="form-x">
       <div class="text__title__popup">Ваш фидбек</div>
       <form class="form">
         <div class="popup_block">
@@ -466,15 +468,16 @@
         </div>
         <div class="popup_block">
           <p>Вы подписаны на e-mail рассылку?</p>
-          <input type="radio" class="radio radio_yes" id="radio">
-          <label for="one">Да</label>
-          <input type="radio" class="radio radio_no" id="radio">
-          <label for="two">Нет</label>
+          <div class="radio_block"> 
+            <input type="radio" class="radio radio_yes" id="yes">
+            <label for="yes">Да</label>
+            <input type="radio" class="radio radio_no" id="no">
+            <label for="no">Нет</label>
+          </div> 
         </div>
-        <div>
-          <p>Расскажите, какой контент вы хотели бы видеть
-            на нашем сайте?</p>
-            <textarea class="popup_text" name="" id="">sdf f r dg dg dsgbdgsbfs e</textarea>
+        <div class="popup_block">
+          <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+            <textarea class="popup_text" name="" id="">Может, больше рецептов?</textarea>
             <button type="submit" class="button">ОТправить</button>
         </div>
       </form>  
